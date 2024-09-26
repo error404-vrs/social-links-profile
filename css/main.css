@@ -45,12 +45,12 @@ a{
     display: flex;
     color: white;
     text-decoration: none;
-    background-color: rgb(32, 32, 32);
+    background-color: rgb(29, 4, 27);
 }
 
 
 a:hover {  
-  background-color: rgb(32, 32, 32);
+  background-color: rgb(29, 4, 27);
   width: 350px;
   animation: buttonshadow ease-in-out 3s infinite;
 }
