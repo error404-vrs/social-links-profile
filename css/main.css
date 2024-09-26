@@ -2,57 +2,92 @@
 
 *{
     font-family: "Inter", sans-serif;
-    box-sizing: border-box;
+    font-optical-sizing: auto;
+    font-style: normal;
+    flex-direction: column;
+    transition: background-color 0.5s ease;
+    
 }
 
 body{
     background-color: black;
-    min-height: 100vh;
-    display: flex;
-    align-items: center;
     justify-content: center;
-    overflow: hidden;
+    height: 100vh;
+    align-items: center;
+    display: flex;
+    margin: 0;
+    size: 10px;
+    transition: all o.5s ease;
 }
-
-.profession{
-    font: 400;
-    color: #FFFFFF;
-}
-
 main{
+    justify-content: center;
+    align-items: center;
+    display: flex;
     background-color: #1F1F1F;
-    text-align: center;
-    padding: 40px;
+    border-radius: 10px;
+    
+    height: 726px;
     width: 384px;
-    border-radius: 8px;
-}
-
-h1{
-    color: white;
-}
-
-li{
-    background-color: #333333;
-    margin-bottom: 16px;
-    padding: 16px;
-    border-radius: 8px;
-    text-align: center;
-}
-
-ul{
-    list-style: none;
-    padding-left: 0;
+    animation: mainshadow ease-in-out 7s infinite;
 }
 
 a{
-    display: block;
-    text-decoration: none;
+    width: 290px;
+    height: 40px;
+    border: none;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    transition: background-color 0.5s ease;
+    transition: height 0.5s ease;
+    transition: width 0.5s ease;
+    justify-content: center;
+    align-items: center;
+    display: flex;
     color: white;
-    font-size: 14px;
-    line-height: 21px;
-    font-weight: 700;
+    text-decoration: none;
+    background-color: purple;
+}
+
+
+a:hover {
+  background-color: rgb(82, 5, 82);
+  width: 350px;
+  animation: buttonshadow ease-in-out 3s infinite;
+}
+
+.detail, h1, button{
+    color: white;
+    
 }
 
 .position{
     color: #C4F82A;
+    ;
+}
+
+h1{
+    margin-bottom: -3px;
+}
+
+.profession{
+    margin-bottom: 30px;
+    color: white;
+}
+
+body.dark-mode {
+    background-color: bisque;
+    transition: background-color 0.5s ease;
+    color: black;
+}
+
+@keyframes mainshadow{
+    50%{
+        box-shadow: rgba(532, 156, 596, 0.5) 0px 5px 15px;
+    }
+}
+
+@keyframes buttonshadow{
+    50%{
+        box-shadow: rgba(532, 196, 516, 0.5) 0px 5px 15px;
+    }
 }
